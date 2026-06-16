@@ -231,8 +231,10 @@ ani = animation.FuncAnimation(fig, animate,
                                frames=total_frames,
                                interval=20, blit=True, repeat=True)
 
-plt.savefig("C:/Users/jiyeo/Downloads/bounce_to_roll_static.png",
+output_path = "/mnt/user-data/outputs/bounce_to_roll_static.png"
+plt.savefig("bounce_to_roll_static.png",
             dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
 print("\n  Static preview saved → bounce_to_roll_static.png")
 
 plt.show()
+
